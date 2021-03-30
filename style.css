@@ -11,7 +11,7 @@
 
 body{
     display: block;
-    background-color: lightblue !important;
+    background: url("media/coffeebackgroundfull.png") repeat scroll 50% 0 !important;
     justify-content: center;
     width: 100%;
 }
@@ -20,7 +20,10 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    background: white;
+    height: 10em;
+    background: url("media/coffee-bannersquare2.png") repeat scroll 50% 0;
+    background-size: 17em;
+    align-items: flex-end;
 }
 .sections {
     display:flex;
@@ -30,17 +33,24 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-.pic-block{
+
+.pic-block-1{
     display: flex;
     width: 50%;
+    background: url("media/cafe.jpeg") no-repeat scroll 50% 0;
 }
+
+.pic-block-2{
+    display: flex;
+    width: 50%;
+    background: url("media/coffeepastry.jpg") no-repeat scroll 50% 0;
+}
+
 .form-container{
     display: flex;
     flex-direction: column;
     width: 50%;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*padding: 10px 20px;*/
+    background: #8ca489;
     text-align: center;
 }
 .selector{
