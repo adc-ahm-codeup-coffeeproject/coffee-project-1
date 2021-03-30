@@ -38,12 +38,14 @@ body{
     display: flex;
     width: 50%;
     background: url("media/cafe.jpeg") no-repeat scroll 50% 0;
+    background-size: auto;
 }
 
 .pic-block-2{
     display: flex;
     width: 50%;
     background: url("media/coffeepastry.jpg") no-repeat scroll 50% 0;
+    background-size: contain;
 }
 
 .form-container{
@@ -77,6 +79,8 @@ body{
 }
 .coffee-list{
     display: flex;
+    font-weight: normal;
+    font-size: medium;
     max-height: 500px;
     flex-wrap: wrap;
     align-content: center;
