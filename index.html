@@ -5,47 +5,54 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
 <body>
-    <h1 class="title">Coffee!</h1>
-
-<!--    <form>-->
-<!--        <label for="roast-selection"></label>-->
-<!--        <select id="roast-selection">-->
-<!--            <option>light</option>-->
-<!--            <option>medium</option>-->
-<!--            <option>dark</option>-->
-<!--        </select>-->
-<!--        <input id="submit" type="submit" />-->
-<!--        <p class="pt-3">Now name your brew!</p>-->
-<!--        <input id="input-name" type="text" placeholder="Coffee Name">-->
-<!--        <input id="input-submit" type="button" value="Add Coffee" />-->
-<!--    </form>-->
-    <form class="col mx-auto p-3">
-        <h3 class="pb-3">Search for a type of coffee</h3>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>all</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-        <input id="searchBox" type="text" placeholder="Search">
-    </form>
-    <div class="coffee-chart">
-        <div class="chart-head">
-            <div>
-                <h3>ID</h3>
-                <h3>NAME</h3>
-                <p>ROAST</p>
-            </div>
-        </div>
-        <div id="coffees"></div>
+    <div class="banner-top">
+        <h1>Coffee!</h1>
     </div>
+    <div class="form-container">
+        <form class="form-1">
+            <h3 class="add-coffee">Add your own coffee!</h3>
+            <div class="inner-form">
+                <label for="input-roast"></label>
+            </div>
+            <div class="inner-form">
+                <h3 class="form-titles">Select a type of roast: </h3>
+                <select class="selector" id="input-roast">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+            </div>
+            <h3 class="form-titles">Now name your brew!</h3>
+            <div class="inner-form">
+                <input class="selector" id="input-name" type="text" placeholder="Coffee Name">
+                <input class="selector" id="input-submit" type="button" value="Add Coffee" />
+            </div>
+        </form>
+        <form class="form-2">
+            <div class="inner-form">
+                <h3>Search for a type of coffee</h3>
+                <label for="roast-selection"></label>
+                <select class="selector" id="roast-selection">
+                    <option>Select</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <input class="selector" id="submit" type="submit" />
+                <input class="selector" id="searchBox" type="text" placeholder="Search">
+            </div>
+        </form>
+    </div>
+    <div>
+        <h3><--- LOOK AT ALL THE CAFFEINE ---></h3>
 
+        <div id="coffees">
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
-
 
