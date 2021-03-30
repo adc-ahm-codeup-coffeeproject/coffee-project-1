@@ -1,9 +1,44 @@
-table {
+
+/*td, th {*/
+/*    border: 1px solid black;*/
+/*    padding: 5px 10px;*/
+/*}*/
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+}
+
+body{
+    display: flex;
+    background-color: lightblue;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+form{
+    display: flex;
+    /*justify-content: flex-end;*/
+}
+
+.coffee-chart {
+    display: flex;
+    justify-content: flex-start;
     border-collapse: collapse;
     margin: 15px 0;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.coffee-chart, #coffees{
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
 }
+
+.coffee.id{
+    display: none;
+}
+

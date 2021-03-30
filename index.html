@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
+    <h1 class="title">Coffee!</h1>
 
     <form>
         <label for="roast-selection"></label>
@@ -18,17 +18,19 @@
         <input id="submit" type="submit" />
     </form>
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
+    <div class="coffee-chart">
+        <div class="chart-head">
+            <div>
+                <h3>ID</h3>
+                <h3>NAME</h3>
+                <p>ROAST</p>
+            </div>
+        </div>
+        <div id="coffees"></div>
+    </div>
 
     <script src="main.js"></script>
 </body>
 </html>
+
+
