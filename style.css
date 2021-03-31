@@ -25,6 +25,19 @@ body{
     background-size: 17em;
     align-items: flex-end;
 }
+
+.logo{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    /*height: 20em;*/
+    width: 20em;
+    margin-top: -205px;
+    /*top: -50px;*/
+    left: 38.5%;
+    /*align-items: center;*/
+}
+
 .sections {
     display:flex;
     flex-wrap: wrap;
@@ -74,7 +87,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 10px 20px;
+    margin: 20px 20px;
     padding: .5em;
 }
 .coffee-list{
@@ -94,7 +107,9 @@ body{
     padding-top: 20px;
     display: inline-block;
     width: 100%;
-    text-align: left;
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bold;
 }
 
 .form-titles{
