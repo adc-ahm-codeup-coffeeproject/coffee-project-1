@@ -1,23 +1,21 @@
-
-/*td, th {*/
-/*    border: 1px solid black;*/
-/*    padding: 5px 10px;*/
-/*}*/
-
 *{
     box-sizing: border-box;
     margin : 0;
 }
 
 body{
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: url("media/coffeebackgroundfull.png") repeat scroll 50% 0 !important;
     justify-content: center;
     width: 100%;
+    font-family: 'Reggae One', cursive;
+    color: rgb(70, 30, 24);
 }
 
 .banner-top{
     display: flex;
+    position: relative;
     justify-content: center;
     width: 100%;
     height: 10em;
@@ -26,15 +24,19 @@ body{
     align-items: flex-end;
 }
 
+#flip{
+    transform: scaleY(-1);
+}
+
 .logo{
     display: flex;
     position: absolute;
     z-index: 1;
     /*height: 20em;*/
     width: 20em;
-    margin-top: -205px;
-    /*top: -50px;*/
-    left: 38.5%;
+    /*margin: -205px 0;*/
+    top: -50px;
+    /*left: 38.5%;*/
     /*align-items: center;*/
 }
 
@@ -47,31 +49,60 @@ body{
     margin-left: auto;
 }
 
-.pic-block-1{
+.pic-block{
     display: flex;
     width: 50%;
-    background: url("media/cafe.jpeg") no-repeat scroll 50% 0;
-    background-size: auto;
 }
 
-.pic-block-2{
-    display: flex;
-    width: 50%;
+#pic-1{
+    background: url("media/cafe.jpeg") no-repeat scroll 50% 0;
+    background-size: cover;
+}
+
+#pic-2{
     background: url("media/coffeepastry.jpg") no-repeat scroll 50% 0;
-    background-size: contain;
+    background-size: cover;
 }
 
 .form-container{
     display: flex;
     flex-direction: column;
     width: 50%;
-    background: #8ca489;
+    background: rgba(140, 164, 137, 0.90);
     text-align: center;
 }
+
 .selector{
+    z-index: 3;
     display: inline-block;
     height: 3em;
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
+    font-weight: bold;
+    color: #241005;
 }
+
+.myButton {
+    color: #deb887;
+    font-size: x-large;
+    line-height: 19px;
+    padding: 14px;
+    border-radius: 0px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-decoration: #241005;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background: #6d0921;
+    border: 2px solid #241005;
+    display: inline-block;}
+
+.myButton:hover {
+    background: #241005; }
+
+.myButton:active {
+    background: #8CA489; }
 
 .form-1, .form-2 {
     display: flex;
@@ -83,33 +114,11 @@ body{
     text-align: center;
 }
 
-.inner-form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 20px 20px;
-    padding: .5em;
-}
-.coffee-list{
-    display: flex;
-    font-weight: normal;
-    font-size: medium;
-    max-height: 500px;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 10px 20px;
-    padding: .5em;
-}
-
-.add-coffee{
+.sub-titles{
     padding-top: 20px;
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: xxx-large;
-    font-weight: bold;
 }
 
 .form-titles{
@@ -117,28 +126,65 @@ body{
     display: inline-block;
     width: 100%;
     text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+.inner-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px 20px 0 20px;
+    padding: .5em;
+}
+.coffee-list{
+    display: flex;
+    max-height: 250px;
+    flex-wrap: wrap;
+    /*align-content: center;*/
+    flex-direction: column;
+    width: 90%;
+    margin: 10px 20px 50px 20px;
+    /*padding: .5em;*/
+    text-align: center;
+}
+
+.product-container{
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+}
+
+.product-name{
+    display: flex;
+    flex-grow: .5;
+    flex-wrap: wrap;
+    /*width: 100%;*/
+    font-weight: bold;
+    font-size: x-large;
+    color: #241005;
+    /*margin: 10px 5px;*/
+    /*padding: .5em;*/
+    text-align: left;
+    /*align-self: flex-start;*/
+}
+
+.product-roast{
+    display: flex;
+    flex-grow: .5;
+    flex-wrap: wrap;
+    /*width: 50%;*/
+    font-weight: normal;
+    font-size: medium;
+    color: #6d0921;
+    /*margin: 10px 5px;*/
+    /*padding: .5em;*/
+    justify-content: flex-end;
 }
 
 
-/*form{*/
-/*    display: flex;*/
-/*    !*justify-content: flex-end;*!*/
-/*}*/
 
-/*.coffee-chart {*/
-/*    display: flex;*/
-/*    justify-content: flex-start;*/
-/*    border-collapse: collapse;*/
-/*    margin: 15px 0;*/
-/*}*/
-
-/*.coffee-chart, #coffees{*/
-/*    display: flex;*/
-/*    !*flex-direction: column;*!*/
-/*    flex-wrap: wrap;*/
-/*}*/
-
-/*.coffee.id{*/
-/*    display: none;*/
-/*}*/
 

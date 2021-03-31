@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
 </head>
 <body>
-    <div class="banner-top">
-    </div>
-    <div class="sections">
+
+<div class="banner-top">
     <img class="logo" src="media/A&AcoffeeLogo1.png" alt="Coffee Logo">
+</div>
+<div class="sections">
+    <!--    <img class="logo" src="media/A&AcoffeeLogo1.png" alt="Coffee Logo">-->
     <div class="form-container">
         <form class="form-2">
             <div class="inner-form">
-                <h3>Search for a type of coffee</h3>
+                <h3 class="form-titles">Search for a type of coffee</h3>
                 <label for="roast-selection"></label>
                 <select class="selector" id="roast-selection">
                     <option>All</option>
@@ -23,46 +28,45 @@
                     <option>medium</option>
                     <option>dark</option>
                 </select>
-                <input class="selector" id="submit" type="submit"/>
                 <input class="selector" id="searchBox" type="text" placeholder="Search">
+                <input class="selector myButton" id="submit" type="submit"/>
             </div>
         </form>
         <hr>
         <form class="form-1">
-            <h3 class="add-coffee">Add your own coffee!</h3>
+            <h3 class="form-titles">Add your own coffee!</h3>
             <label for="input-roast"></label>
+            <h3 class="sub-titles">Select a type of roast: </h3>
             <div class="inner-form">
-                <h3 class="form-titles">Select a type of roast: </h3>
                 <select class="selector" id="input-roast">
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
                 </select>
             </div>
-            <h3 class="form-titles">Now name your brew!</h3>
+            <h3 class="sub-titles">Name your Java!</h3>
             <div class="inner-form">
                 <input class="selector" id="input-name" type="text" placeholder="Coffee Name">
-                <input class="selector" id="input-submit" type="button" value="Add Coffee" />
+                <input class="selector myButton" id="input-submit" type="button" value="Add Coffee"/>
             </div>
         </form>
     </div>
-        <div class="pic-block-1">
-<!--            <img src="#" alt="Coffee">-->
-        </div>
+    <div class="pic-block" id="pic-1">
     </div>
-    <div class="sections">
-        <div class="pic-block-2">
-<!--            <img src="#" alt="Coffee">-->
-        </div>
+</div>
+<div class="sections">
+    <div class="pic-block" id="pic-2">
+    </div>
     <div class="form-container">
         <div class="coffee-list">
-            <h3><--- LOOK AT ALL THE CAFFEINE ---></h3>
-            </div>
-            <div class="coffee-list" id="coffees">
-            </div>
+            <h3 class="form-titles">Your coffee list</h3>
+        </div>
+        <div class="coffee-list" id="coffees">
         </div>
     </div>
-    <script src="main.js"></script>
+</div>
+<footer class="banner-top" id="flip"></footer>
+<script src="main.js"></script>
 </body>
 </html>
 

@@ -39,10 +39,10 @@ function addCoffees (input) {
 // PUTS COFFEE DATA INTO TABLE WITHIN JS //
 function renderCoffee(coffee) {
 
-    var html = '<div class="coffee d-block col-4 mx-auto p-auto">';
+    var html = '<div class="product-container">';
     // html += '<span>' + coffee.id + '</span>';
-    html += '<h1>' + coffee.name + '</h1>';
-    html += '<p>' + coffee.roast + '</p>';
+    html += '<h1 class="product-name">' + coffee.name + '</h1>';
+    html += '<p class="product-roast">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
